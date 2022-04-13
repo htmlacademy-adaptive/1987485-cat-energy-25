@@ -1,0 +1,75 @@
+.questionnaire {
+  margin: 0;
+  padding: 0;
+}
+
+.questionnaire__list {
+  list-style-type: none;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #444444;
+}
+
+.filter {
+  margin: 0;
+  padding: 0;
+}
+
+.filter__list {
+  line-height: 18px;
+  list-style-type: none;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.contact {
+  margin: 0;
+  padding: 0;
+}
+
+.contact__title {
+  font-size: 24px;
+  line-height: 26px;
+}
+
+.contact__email-label {
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #444444;
+}
+
+.contact__tel-label {
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #444444;
+}
+
+.comment__title {
+  font-size: 24px;
+  line-height: 26px;
+}
+
+.comment__area {
+  font-family: "Oswald", sans-serif;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #444444;
+}
+
+.recommendation__title {
+  font-size: 24px;
+  line-height: 26px;
+}
+
+.recommendation__list {
+  list-style-type: none;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.hint {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+}
