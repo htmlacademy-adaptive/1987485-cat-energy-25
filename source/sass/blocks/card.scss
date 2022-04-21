@@ -1,0 +1,40 @@
+.card__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.card__title {
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.card__table-item {
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  color: #444444;
+}
+
+.card__batton {
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: #68b738;
+}
+
+.card__title-last {
+  color: #111111;
+}
+
+.card__text-last {
+  text-align: center;
+}
+
+.card__batton-last {
+  color: #444444;
+  background: #f2f2f2;
+}

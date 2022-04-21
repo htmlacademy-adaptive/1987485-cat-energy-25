@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 
@@ -11,7 +12,7 @@
 <body>
   <header class="form-header">
     <a class="form-header__logo" href="index.html">
-      <img class="form-header__logo-image" src="../source/img/logo-mobile.png" width="33" height="37"
+      <img class="form-header__logo-image" src="../source/img/logo_mobile.png" width="33" height="37"
         alt="Кэт энерджи.">
     </a>
     <a class="form-header__title" href="index.html">
@@ -35,19 +36,19 @@
       <div class="form-nav__wrapper">
         <ul class="form-nav__list">
           <li class="form-nav__list-item">
-            <a href="index.html">
+            <a class="form-nav__list-link" href="index.html">
               Главная
             </a>
           </li>
 
           <li class="form-nav__list-item">
-            <a href="catalog.html">
+            <a class="form-nav__list-link" href="catalog.html">
               Каталог продукции
             </a>
           </li>
 
           <li class="form-nav__list-item form-nav__list-item--current">
-            <a>
+            <a class="form-nav__list-link" href="#">
               Подбор программы
             </a>
           </li>
@@ -69,7 +70,7 @@
       </p>
     </div>
 
-    <form class="questionnaire" action="https://echo.htmlacademy.ru/courses" method="post">
+    <form class="questionnaire" name="form" action="https://echo.htmlacademy.ru/courses" method="post">
 
       <ul class="questionnaire__list">
         <li class="questionnaire__item">
@@ -170,7 +171,7 @@
 
       <input class="questionnaire__button" type="submit" value="отправить заявку">
 
-      <div class="hint">* — Обязательные поля</div>
+      <p class="hint">* — Обязательные поля</p>
     </form>
 
     <div class="nav-map">
