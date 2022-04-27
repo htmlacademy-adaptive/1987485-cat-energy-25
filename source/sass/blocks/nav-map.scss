@@ -1,0 +1,36 @@
+.nav-map {
+  margin: 0;
+  padding: 0;
+}
+
+.nav-map__container {
+  margin: 20px 26px;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-map__title {
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #111111;
+  max-width: 200px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-map__adress {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #444444;
+  max-width: 147px;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: 768px) {
+  .nav-map__container {
+    margin: 20px 70px;
+  }
+}
