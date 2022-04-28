@@ -2,4 +2,14 @@
   margin: 0;
   padding: 0;
   background: #ffffff;
+  border: #09e927 solid 1px;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width: 768px) {
+  .main-header {
+    display: flex;
+    justify-content: start;
+  }
 }

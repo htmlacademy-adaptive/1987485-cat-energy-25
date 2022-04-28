@@ -1,9 +1,20 @@
+.main-nav {
+  margin: 0;
+  padding: 0;
+}
+
 .main-nav__wrapper {
   font-family: "Oswald", sans-serif;
   font-weight: 500;
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
+}
+
+.main-nav__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
 .main-nav__list-item {
@@ -14,4 +25,43 @@
   text-decoration: none;
   display: block;
   color: #000000;
+}
+
+@media (min-width: 768px) {
+  .main-nav {
+    margin-left: auto;
+  }
+
+  .main-nav__list {
+    display: flex;
+    margin-right: 30px;
+  }
+
+  .main-nav__list-item:not(:last-child) {
+    margin-right: 35px;
+  }
+
+  .main-nav__list-link {
+    font-size: 18px;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: 1440px) {
+  .main-nav__list {
+    margin-right: 110px;
+  }
+
+  .main-nav__list-link {
+    font-size: 20px;
+    line-height: 30px;
+    color: #ffffff;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
 }
