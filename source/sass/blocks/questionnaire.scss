@@ -8,11 +8,32 @@
   line-height: 18px;
   text-transform: uppercase;
   color: #444444;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.questionnaire__item {
+  display: flex;
+}
+
+.questionnaire__item-label {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.questionnaire__item-input {
+  border: #d9d9d9 solid 1px;
+  border-radius: 0;
 }
 
 .filter {
   margin: 0;
   padding: 0;
+  border: #d9d9d9 solid 2px;
+  border-left: none;
+  border-right: none;
 }
 
 .filter__list {
@@ -20,6 +41,13 @@
   list-style-type: none;
   text-transform: uppercase;
   color: #222222;
+  display: flex;
+  flex-direction: column;
+}
+
+.control__text {
+  font-size: 16px;
+  line-height: 18px;
 }
 
 .contact {
@@ -30,18 +58,21 @@
 .contact__title {
   font-size: 24px;
   line-height: 26px;
+  width: 200px;
 }
 
-.contact__email-label {
-  line-height: 18px;
-  text-transform: uppercase;
-  color: #444444;
-}
-
+.contact__email-label,
 .contact__tel-label {
   line-height: 18px;
+  font-weight: 400;
   text-transform: uppercase;
   color: #444444;
+}
+
+.contact__email-input,
+.contact__tel-input {
+  border: #dcdcdc solid 1px;
+  border-radius: 0;
 }
 
 .comment__title {
@@ -54,6 +85,8 @@
   line-height: 18px;
   text-transform: uppercase;
   color: #444444;
+  border: #e7e7e7 solid 1px;
+  border-radius: 0;
 }
 
 .recommendation__title {
@@ -67,9 +100,140 @@
   text-transform: uppercase;
 }
 
+.customization__field {
+  width: 30px;
+  height: 30px;
+  border: #cdcdcd solid 1px;
+  border-radius: 0;
+}
+
+.questionnaire__button {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  width: 280px;
+  border: none;
+  background: #68b738;
+  color: #ffffff;
+  padding: 7px 44px;
+}
+
 .hint {
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 16px;
   text-align: center;
+  padding: 0;
+  margin: 0;
+  width: 280px;
+}
+
+@media (min-width: 768px) {
+  .questionnaire__item-label {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .control__text {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .filter {
+    border-left: #d9d9d9 solid 2px;
+    border-right: #d9d9d9 solid 2px;
+    width: 630px;
+  }
+
+  .contact__title {
+    font-size: 36px;
+    line-height: 36px;
+    width: auto;
+  }
+
+  .contact__email-label,
+  .contact__tel-label {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .contact__email-input,
+  .contact__tel-input {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .comment__title {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .comment__area {
+    font-size: 20px;
+    line-height: 30px;
+    width: 631px;
+  }
+
+  .recommendation__title {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .recommendation__list {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 123px;
+    row-gap: 32px;
+    width: 565px;
+  }
+
+  .recommendation__item {
+    width: 221px;
+  }
+
+  .questionnaire-container__button-hint {
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+  }
+
+  .questionnaire__button {
+    width: 282px;
+    padding: 13px 0;
+  }
+}
+
+@media (min-width: 1440px) {
+  .questionnaire__container-list-filter {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .questionnaire__list {
+    width: 568px;
+  }
+
+  .filter {
+    width: 568px;
+  }
+
+  .contact__container-email-tel {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .comment__area {
+    width: 1220px;
+    margin: 0 110px;
+  }
+
+  .recommendation__list {
+    display: flex;
+    width: 1196px;
+  }
+
+  .questionnaire__button {
+    width: 568px;
+    padding: 13px 188px;
+  }
 }

@@ -8,6 +8,8 @@
   line-height: 20px;
   text-transform: uppercase;
   color: #222222;
+  width: 122px;
+  font-weight: 400;
 }
 
 .card__table-item {
@@ -16,25 +18,140 @@
   line-height: 16px;
   text-align: center;
   color: #444444;
+  display: flex;
+  width: 141px;
+  justify-content: space-between;
 }
 
 .card__batton {
-  line-height: 20px;
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
   background: #68b738;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  border: none;
+  width: 280px;
+  padding: 10px 109px;
+}
+
+.card__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card__container {
+  display: flex;
 }
 
 .card__title-last {
   color: #111111;
+  text-align: center;
+  width: 300px;
 }
 
 .card__text-last {
+  font-family: "Arial", sans-serif;
   text-align: center;
 }
 
 .card__batton-last {
   color: #444444;
   background: #f2f2f2;
+  padding: 10px 0;
+  font-weight: 400;
+}
+
+@media (min-width: 768px) {
+  .product {
+    display: grid;
+    column-gap: 30px;
+    row-gap: 144px;
+    justify-content: center;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(324px, 1fr));
+    /*grid-template-columns: 324px 324px;*/
+  }
+
+  .card__item {
+    display: flex;
+    height: 430px;
+    justify-content: space-around;
+    width: 324px;
+  }
+
+  ul .card__item:not(:last-child) {
+    background: #f2f2f2;
+  }
+
+  .card__container {
+    display: block;
+  }
+
+  .card__title {
+    font-size: 20px;
+    line-height: 24px;
+    width: 145px;
+    text-align: center;
+  }
+
+  .card__table-item {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .card__batton {
+    width: 248px;
+    padding: 10px 93px;
+  }
+
+  ul .card__item:last-child {
+    border: #f2f2f2 solid 2px;
+  }
+
+  .card__title-last {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .card__text-last {
+    font-size: 16px;
+    line-height: 18px;
+    width: 167px;
+  }
+
+  .card__batton-last {
+    padding: 10px 0;
+    font-size: 16px;
+    margin: 40px 0;
+  }
+}
+
+@media (min-width: 1440px) {
+  .product {
+    column-gap: 80px;
+    row-gap: 144px;
+    grid-template-columns: 245px 245px 245px 245px;
+  }
+
+  .card__item {
+    width: 245px;
+    height: 431px;
+  }
+
+  .card__title {
+    line-height: 21px;
+  }
+
+  .card__batton {
+    width: 168px;
+    padding: 10px 53px;
+  }
+
+  .card__batton-last {
+    padding: 10px 0;
+    font-size: 16px;
+  }
 }

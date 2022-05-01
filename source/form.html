@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -71,65 +72,68 @@
     </div>
 
     <form class="questionnaire" name="form" action="https://echo.htmlacademy.ru/courses" method="post">
-
-      <ul class="questionnaire__list">
-        <li class="questionnaire__item">
-          <label for="name">ИМЯ:*</label>
-          <input type="text" id="name" name="name" value="БАРСИК" required>
-        </li>
-
-        <li class="questionnaire__item">
-          <label for="weight">Вес (кг):*</label>
-          <input type="text" id="weight" name="name" value="7" required>
-        </li>
-
-        <li class="questionnaire__item">
-          <label for="age">Возраст (лет):</label>
-          <input type="text" id="age" name="name" value="7">
-        </li>
-      </ul>
-
-      <fieldset class="filter">
-        <ul class="filter__list">
-          <li class="filter__item">
-            <label class="filter__radio control">
-              <input class="visually-hidden control__field" type="radio" name="weight-loss" value="похудение" checked>
-              <span class="control__mark"></span>
-              <span class="control__text">похудение</span>
-            </label>
+      <div class="questionnaire__container-list-filter">
+        <ul class="questionnaire__list">
+          <li class="questionnaire__item">
+            <label class="questionnaire__item-label" for="name">ИМЯ:*</label>
+            <input class="questionnaire__item-input" type="text" id="name" name="name" value="БАРСИК" required>
           </li>
 
-          <li class="filter__item">
-            <label class="filter__radio control">
-              <input class="visually-hidden control__field" type="radio" name="weight-gain" value="Набор массы">
-              <span class="control__mark"></span>
-              <span class="control__text">Набор массы</span>
-            </label>
+          <li class="questionnaire__item">
+            <label class="questionnaire__item-label" for="weight">Вес (кг):*</label>
+            <input class="questionnaire__item-input" type="text" id="weight" name="name" value="7" required>
           </li>
 
-          <li class="filter__item">
-            <label class="filter__radio control">
-              <input class="visually-hidden control__field" type="radio" name="advice"
-                value="Не знаю (Нужен ваш совет)">
-              <span class="control__mark"></span>
-              <span class="control__text">Не знаю (Нужен ваш совет)</span>
-            </label>
+          <li class="questionnaire__item">
+            <label class="questionnaire__item-label" for="age">Возраст (лет):</label>
+            <input class="questionnaire__item-input" type="text" id="age" name="name" value="7">
           </li>
         </ul>
-      </fieldset>
+
+        <fieldset class="filter">
+          <ul class="filter__list">
+            <li class="filter__item">
+              <label class="filter__radio control">
+                <input class="visually-hidden control__field" type="radio" name="weight-loss" value="похудение" checked>
+                <span class="control__mark"></span>
+                <span class="control__text">похудение</span>
+              </label>
+            </li>
+
+            <li class="filter__item">
+              <label class="filter__radio control">
+                <input class="visually-hidden control__field" type="radio" name="weight-gain" value="Набор массы">
+                <span class="control__mark"></span>
+                <span class="control__text">Набор массы</span>
+              </label>
+            </li>
+
+            <li class="filter__item">
+              <label class="filter__radio control">
+                <input class="visually-hidden control__field" type="radio" name="advice"
+                  value="Не знаю (Нужен ваш совет)">
+                <span class="control__mark"></span>
+                <span class="control__text">Не знаю (Нужен ваш совет)</span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+      </div>
 
       <div class="contact">
         <legend class="contact__title">Контактные данные
           (владельца кота)</legend>
-        <div class="contact__email">
-          <label class="contact__email-label" for="email">E-mail:*</label>
-          <input class="contact__email-input" type="email" id="email" name="email" placeholder="kuklachev@gmail.com"
-            required>
-        </div>
-        <div class="contact__tel">
-          <label class="contact__tel-label" for="tel">Телефон:*</label>
-          <input class="contact__tel-input" type="tel" id="tel" name="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}"
-            placeholder="8 (960) 900-60-90" required>
+        <div class="contact__container-email-tel">
+          <div class="contact__email">
+            <label class="contact__email-label" for="email">E-mail:*</label>
+            <input class="contact__email-input" type="email" id="email" name="email" placeholder="kuklachev@gmail.com"
+              required>
+          </div>
+          <div class="contact__tel">
+            <label class="contact__tel-label" for="tel">Телефон:*</label>
+            <input class="contact__tel-input" type="tel" id="tel" name="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}"
+              placeholder="8 (960) 900-60-90" required>
+          </div>
         </div>
       </div>
 
@@ -150,7 +154,7 @@
           </li>
 
           <li class="recommendation__item">
-            <input type="checkbox" name="water" id="water-field">
+            <input class="customization__field" type="checkbox" name="water" id="water-field">
             <span class="customization__mark"></span>
             <label class="customization__label" for="water-field">питьевая вода</label>
           </li>
@@ -169,21 +173,27 @@
         </ul>
       </div>
 
-      <input class="questionnaire__button" type="submit" value="отправить заявку">
+      <div class="questionnaire-container__button-hint">
+        <input class="questionnaire__button" type="submit" value="отправить заявку">
 
-      <p class="hint">* — Обязательные поля</p>
+        <p class="hint">* — Обязательные поля</p>
+      </div>
     </form>
 
-    <div class="nav-map">
-      <h4 class="nav-map__title">
-        приглашаем к сотрудничеству дилеров!
-      </h4>
-      <p class="nav-map__adress">
-        ул. Большая
-        Конюшенная, д. 19/8
-        Санкт-Петербург
-      </p>
-      <iframe class="nav-map__maps"
+    <div class="form-nav-map">
+      <div class="form-nav-map__container">
+        <h4 class="form-nav-map__title">
+          приглашаем <br>
+          к сотрудничеству
+          дилеров!
+        </h4>
+        <p class="form-nav-map__adress">
+          ул. Большая
+          Конюшенная, д. 19/8
+          Санкт-Петербург
+        </p>
+      </div>
+      <iframe class="form-nav-map__maps"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5652.796338585806!2d30.326869751685145!3d59.93935487660729!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1648995956284!5m2!1sru!2sru"
         width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
       </iframe>
