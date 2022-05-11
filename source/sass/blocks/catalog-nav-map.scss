@@ -11,12 +11,19 @@
 }
 
 .catalog-nav-map__title {
+  font-weight: normal;
   line-height: 20px;
   text-transform: uppercase;
   color: #111111;
   max-width: 200px;
   margin: 0;
   padding: 0;
+}
+
+.catalog-nav-map__maps {
+  border: none;
+  width: 100%;
+  height: 362px;
 }
 
 .catalog-nav-map__adress {
@@ -31,12 +38,46 @@
 
 @media (min-width: 768px) {
   .catalog-nav-map__container {
-    padding: 20px 70px;
+    margin: 0;
+    padding: 59px 70px 55px 70px;
+  }
+
+  .catalog-nav-map__adress {
+    text-align: end;
+  }
+
+  .catalog-nav-map__maps {
+    height: 400px;
   }
 }
 
 @media (min-width: 1440px) {
   .catalog-nav-map__container {
     background: #ffffff;
+    margin: 0;
+    justify-content: normal;
+    position: absolute;
+    padding: 56px 80px;
+    top: 95px;
+    left: 110px;
+  }
+
+  .catalog-nav-map {
+    position: relative;
+    margin: 0;
+    padding: 0;
+  }
+
+  .catalog-nav-map__title {
+    margin-right: 87px;
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .catalog-nav-map__adress {
+    font-size: 16px;
+    line-height: 20px;
+    max-width: 155px;
+    text-align: left;
   }
 }

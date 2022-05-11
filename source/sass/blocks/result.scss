@@ -1,10 +1,18 @@
-.result {
+.description__result {
   background: #eaeaea;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.result__text {
+.description__result-common {
+  display: flex;
+  margin-top: 15px;
+}
+
+.description__result-text {
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
