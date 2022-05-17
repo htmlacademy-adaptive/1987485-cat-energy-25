@@ -232,10 +232,25 @@ ul .recommendation__item:not(:last-child) {
   margin-bottom: 13px;
 }
 
-.customization__field {
+.customization {
+  position: relative;
+}
+
+/*.customization__control {
+  display: flex;
+  align-items: center;
+}*/
+
+.customization__mark {
   border: #cdcdcd 1px solid;
   width: 30px;
   height: 30px;
+}
+
+.customization__mark-radio {
+  background-image: url("./source/img/tick.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .customization__label {
@@ -393,25 +408,20 @@ ul .recommendation__item:not(:last-child) {
     margin-left: 70px;
   }
 
-  .recommendation__item {
-    width: 221px;
-  }
-
-  .customization__field {
-    width: 40px;
-    height: 40px;
-  }
-
   .customization__label {
     font-size: 20px;
     line-height: 30px;
   }
 
+  .customization__mark {
+    width: 40px;
+    height: 40px;
+  }
+
   .questionnaire-container__button-hint {
     display: flex;
     align-items: center;
-    margin-left: 70px;
-    margin-top: 50px;
+    margin: 50px 0 72px 70px;
   }
 
   .questionnaire__button {

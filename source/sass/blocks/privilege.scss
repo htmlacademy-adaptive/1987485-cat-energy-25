@@ -93,6 +93,27 @@
   margin-bottom: 19px;
 }
 
+.privilege__aside {
+  text-align: center;
+  position: relative;
+  margin: 0 auto;
+  width: 280px;
+}
+
+.privilege__aside-text {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  position: absolute;
+  color: #ffffff;
+  width: 161px;
+  left: 57px;
+  bottom: 30px;
+  right: auto;
+}
+
 @media (max-width: 767px) {
   .privilege__title::before {
     content: "";
@@ -117,6 +138,8 @@
 
   .privilege__item {
     width: auto;
+    border-left: 1px solid #cdcdcd;
+    border-right: 1px solid #cdcdcd;
   }
 
   .privilege__item-container {
@@ -145,6 +168,18 @@
     margin: 0 38px 28px 38px;
     line-height: 16px;
   }
+
+  .privilege__aside {
+    width: 707px;
+  }
+
+  .privilege__aside-text {
+    text-align: left;
+    width: 161px;
+    right: 50px;
+    bottom: 56px;
+    left: auto;
+  }
 }
 
 @media (min-width: 1440px) {
@@ -169,11 +204,14 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    border-left: none;
+    border-right: none;
   }
 
   .privilege__item-container {
     width: 612px;
     padding: 0;
+    margin: 25px 0;
   }
 
   .privilege__item-title {
@@ -189,5 +227,17 @@
     width: 244px;
     padding: 7px 28px;
     margin: 15px 0;
+  }
+
+  .privilege__aside {
+    width: 245px;
+  }
+
+  .privilege__aside-text {
+    text-align: center;
+    width: 161px;
+    right: 38px;
+    bottom: 37px;
+    left: auto;
   }
 }
