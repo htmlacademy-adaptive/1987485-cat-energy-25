@@ -12,6 +12,7 @@
 
 .nav-map__title {
   line-height: 20px;
+  font-weight: normal;
   text-transform: uppercase;
   color: #111111;
   max-width: 200px;
@@ -29,8 +30,48 @@
   padding: 0;
 }
 
+.nav-map__maps {
+  border: none;
+  width: 100%;
+  height: 362px;
+}
+
 @media (min-width: 768px) {
   .nav-map__container {
-    margin: 20px 70px;
+    margin: 56px 70px;
+  }
+
+  .nav-map__maps {
+    height: 400px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .nav-map {
+    position: relative;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav-map__container {
+    background: #ffffff;
+    margin: 0;
+    justify-content: normal;
+    position: absolute;
+    padding: 56px 80px;
+    top: 95px;
+    left: 110px;
+  }
+
+  .nav-map__title {
+    margin-right: 87px;
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .nav-map__adress {
+    font-size: 16px;
+    line-height: 20px;
+    max-width: 155px;
   }
 }
