@@ -291,6 +291,11 @@ ul .recommendation__item:not(:last-child) {
   .contact__email-label {
     width: 70px;
   }
+
+  .hint {
+    margin-top: 21px;
+    margin-bottom: 32px;
+  }
 }
 
 @media (min-width: 768px) {

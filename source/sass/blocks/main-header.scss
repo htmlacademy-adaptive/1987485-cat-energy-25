@@ -23,6 +23,12 @@
   min-height: 66px;
 }
 
+@media (max-width: 767px) {
+  .main-header__title {
+    margin-left: 58px;
+  }
+}
+
 @media (min-width: 768px) {
   .main-header {
     padding: 24px 0 0 30px;
