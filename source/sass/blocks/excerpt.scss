@@ -31,6 +31,11 @@
   line-height: 16px;
   text-align: center;
   text-transform: uppercase;
+  cursor: pointer;
+}
+
+.excerpt__link:active {
+  opacity: 0.3;
 }
 
 .excerpt__link-arow {

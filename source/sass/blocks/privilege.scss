@@ -91,6 +91,16 @@
   width: 280px;
   padding: 10px 109px;
   margin-bottom: 19px;
+  cursor: pointer;
+}
+
+.privilege__item-button:hover {
+  background: #5eaa2f;
+}
+
+.privilege__item-button:active {
+  background: #5eaa2f;
+  color: #ffffff2b;
 }
 
 .privilege__aside {
@@ -232,6 +242,7 @@
 
   .privilege__aside {
     width: 245px;
+    margin-bottom: 68px;
   }
 
   .privilege__aside-text {
