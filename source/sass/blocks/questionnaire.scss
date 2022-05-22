@@ -36,6 +36,19 @@
   height: 45px;
   padding-left: 15px;
   margin-left: 1px;
+  cursor: pointer;
+}
+
+.questionnaire__item-input:hover {
+  border-color: #cdcdcd;
+}
+
+.questionnaire__item-input:focus {
+  border: 2px solid #444444;
+}
+
+.questionnaire__item-input:invalid {
+  border: 2px solid #ff8282;
 }
 
 .filter {
@@ -228,6 +241,10 @@ ul .filter__item:not(:last-child) {
   align-items: center;
 }
 
+.recommendation__item:disabled {
+  opacity: 0.3;
+}
+
 ul .recommendation__item:not(:last-child) {
   margin-bottom: 13px;
 }
@@ -236,19 +253,18 @@ ul .recommendation__item:not(:last-child) {
   position: relative;
 }
 
-/*.customization__control {
-  display: flex;
-  align-items: center;
-}*/
-
 .customization__mark {
   border: #cdcdcd 1px solid;
   width: 30px;
   height: 30px;
 }
 
+.customization__mark:hover {
+  border: #bababa 1px solid;
+}
+
 .customization__mark-radio {
-  background-image: url("./source/img/tick.svg");
+  background-image: url("/img/tick.svg");
   background-repeat: no-repeat;
   background-position: center;
 }

@@ -35,6 +35,16 @@
   padding: 7px 44px;
   border: none;
   margin: 0 20px;
+  cursor: pointer;
+}
+
+.subject__button:hover {
+  background: #5eaa2f;
+}
+
+.subject__button:active {
+  background: #5eaa2f;
+  color: #ffffff2d;
 }
 
 @media (min-width: 180px) {
@@ -46,8 +56,8 @@
 
 @media (max-width: 767px) {
   .subject__container {
-    background-image: url("./source/img/geen_cat_mob.svg"),
-      url("./source/img/green_cat_mobile.jpg");
+    background-image: url("/img/geen_cat_mob.svg"),
+      url("/img/green_cat_mobile.jpg");
     background-repeat: no-repeat;
     background-position: 1px 1px;
     width: 100%;
@@ -125,8 +135,8 @@
   .subject__container-image {
     width: 720px;
     height: 694px;
-    background-image: url("./source/img/green_cat_des.svg"),
-      url("./source/img/green_cat_desktop.jpg");
+    background-image: url("/img/green_cat_des.svg"),
+      url("/img/green_cat_desktop.jpg");
     background-repeat: no-repeat;
     background-position: 100% 100%;
     background-size: 720px 694px;
