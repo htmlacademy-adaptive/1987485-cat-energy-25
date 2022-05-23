@@ -71,31 +71,43 @@
 }
 
 ul .filter__item:not(:last-child) {
-  margin-bottom: 13px;
+  margin-bottom: 20px;
 }
 
 .control {
-  display: flex;
-  align-items: center;
+  position: relative;
+  display: block;
+  padding-left: 30px;
 }
 
 .control__mark {
-  border: #cdcdcd 1px solid;
-  border-radius: 50%;
+  position: absolute;
+  top: -7px;
+  left: 0;
   width: 30px;
   height: 30px;
-  position: relative;
+  border: #cdcdcd 1px solid;
+  border-radius: 50%;
 }
 
-.control__mark-radio::before {
-  content: "";
+.control:hover .control__mark {
+  border-color: #bababa;
+}
+
+.control__input:disabled + .control__mark {
+  border-color: #222222;
+  opacity: 0.3;
+}
+
+.control__input[type="radio"]:checked + .control__mark::before {
   position: absolute;
-  background: #68b738;
-  border-radius: 50%;
-  width: 13px;
-  height: 13px;
   top: 9px;
   left: 9px;
+  width: 13px;
+  height: 13px;
+  background-color: #68b738;
+  border-radius: 50%;
+  content: "";
 }
 
 .control__text {
@@ -234,6 +246,7 @@ ul .filter__item:not(:last-child) {
   list-style-type: none;
   line-height: 18px;
   text-transform: uppercase;
+  margin-bottom: 50px;
 }
 
 .recommendation__item {
@@ -246,27 +259,53 @@ ul .filter__item:not(:last-child) {
 }
 
 ul .recommendation__item:not(:last-child) {
-  margin-bottom: 13px;
+  margin-bottom: 30px;
 }
 
 .customization {
   position: relative;
+  display: block;
+  padding-left: 30px;
 }
 
 .customization__mark {
-  border: #cdcdcd 1px solid;
+  position: absolute;
+  top: -7px;
+  left: 0;
   width: 30px;
   height: 30px;
+  border: #cdcdcd 1px solid;
 }
 
-.customization__mark:hover {
-  border: #bababa 1px solid;
+.customization:hover .customization__mark {
+  border-color: #000000;
 }
 
-.customization__mark-radio {
-  background-image: url("/img/tick.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+.customization__input:disabled + .customization__mark {
+  border-color: #000000;
+  opacity: 0.3;
+}
+
+.customization__input[type="checkbox"]:checked + .customization__mark::before {
+  position: absolute;
+  top: 16px;
+  left: 2px;
+  width: 12px;
+  height: 2px;
+  background-color: #68b738;
+  content: "";
+  transform: rotate(45deg);
+}
+
+.customization__input[type="checkbox"]:checked + .customization__mark::after {
+  position: absolute;
+  top: 15px;
+  left: 9px;
+  width: 18px;
+  height: 2px;
+  background-color: #68b738;
+  content: "";
+  transform: rotate(-45deg);
 }
 
 .customization__label {
@@ -349,23 +388,22 @@ ul .recommendation__item:not(:last-child) {
     margin-left: 30px;
   }
 
-  .control__mark {
-    border: #cdcdcd 1px solid;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    position: relative;
+  .control {
+    padding-left: 40px;
   }
 
-  .control__mark-radio::before {
-    content: "";
-    position: absolute;
-    background: #68b738;
-    border-radius: 50%;
-    width: 18px;
-    height: 18px;
+  .control__mark {
+    top: -7px;
+    left: 0;
+    width: 40px;
+    height: 40px;
+  }
+
+  .control__input[type="radio"]:checked + .control__mark::before {
     top: 11px;
     left: 11px;
+    width: 18px;
+    height: 18px;
   }
 
   .contact__container-line::before,
@@ -419,7 +457,7 @@ ul .recommendation__item:not(:last-child) {
 
   .recommendation__list {
     display: grid;
-    align-items: center;
+    align-items: start;
     grid-template-columns: 1fr 1fr;
     column-gap: 123px;
     row-gap: 32px;
@@ -432,11 +470,27 @@ ul .recommendation__item:not(:last-child) {
   .customization__label {
     font-size: 20px;
     line-height: 30px;
+    margin-left: 30px;
   }
 
   .customization__mark {
     width: 40px;
     height: 40px;
+    top: -3px;
+  }
+
+  .customization__input[type="checkbox"]:checked + .customization__mark::before {
+    top: 21px;
+    left: 5px;
+    width: 17px;
+    height: 3px;
+  }
+
+  .customization__input[type="checkbox"]:checked + .customization__mark::after {
+    top: 19px;
+    left: 15px;
+    width: 23px;
+    height: 3px;
   }
 
   .questionnaire-container__button-hint {
@@ -466,11 +520,11 @@ ul .recommendation__item:not(:last-child) {
 
   .filter {
     width: 568px;
-    margin: 0 110px 20px 0;
+    margin: 0 110px 24px 0;
   }
 
   .filter__list {
-    margin: 25px 28px 25px 28px;
+    margin: 40px 28px;
   }
 
   .contact__title,
@@ -506,6 +560,7 @@ ul .recommendation__item:not(:last-child) {
   .recommendation__list {
     display: flex;
     width: 1196px;
+    align-items: flex-start;
   }
 
   .questionnaire__button {
