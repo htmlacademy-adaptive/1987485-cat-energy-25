@@ -140,11 +140,10 @@
   .product {
     display: grid;
     column-gap: 30px;
-    row-gap: 144px;
+    row-gap: 60px;
     justify-content: center;
     justify-items: center;
     grid-template-columns: repeat(auto-fit, minmax(324px, 1fr));
-    /*grid-template-columns: 324px 324px;*/
   }
 
   .card__item {
