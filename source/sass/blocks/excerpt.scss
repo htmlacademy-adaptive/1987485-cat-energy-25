@@ -6,7 +6,12 @@
 .excerpt__content {
   background: #f2f2f2f2;
   margin: 20px;
-  padding: 21px 21px 10px 21px;
+  padding: 10px 21px 10px 21px;
+  margin-bottom: -19px;
+}
+
+.excerpt__container {
+  margin: 48px 19px 19px 20px;
 }
 
 .excerpt__title {
@@ -15,6 +20,7 @@
   font-weight: normal;
   text-transform: uppercase;
   margin-left: 19px;
+  margin-bottom: 14px;
 }
 
 .excerpt__text {
@@ -51,9 +57,10 @@
   .excerpt__image {
     background: #68b738;
     border-radius: 50%;
-    width: 50px;
-    height: 50px;
+    width: 51px;
+    height: 51px;
     position: relative;
+    margin-top: 6px;
   }
 
   .excerpt__image-cat {
@@ -64,8 +71,8 @@
 
   .excerpt__image-small-cat {
     position: absolute;
-    top: -3px;
-    left: 7px;
+    top: -2px;
+    left: 8px;
   }
 
   .excerpt__button-link {
@@ -88,7 +95,11 @@
     margin: 0 30px 30px 30px;
     display: flex;
     flex-direction: column;
-    padding: 77px 0 53px 53px;
+    padding: 105px 0 53px 53px;
+  }
+
+  .excerpt__container {
+    margin: 0 30px 56px 30px;
   }
 
   .excerpt__title {
@@ -103,13 +114,18 @@
     width: 340px;
   }
 
+  .excerpt__button-link {
+    margin-top: 13px;
+  }
+
   .excerpt__link {
     font-size: 20px;
     line-height: 30px;
   }
 
   .excerpt__link-arow {
-    margin-left: 25px;
+    margin-left: 21px;
+    margin-bottom: 4px;
   }
 
   .excerpt__item {
@@ -117,11 +133,12 @@
     position: relative;
     flex-direction: row-reverse;
     justify-content: flex-end;
+    margin: -34px -8px 11px 0;
   }
 
   .excerpt__image {
     position: absolute;
-    top: 5px;
+    top: 16px;
     right: 70px;
     background: #68b738;
     border-radius: 50%;
