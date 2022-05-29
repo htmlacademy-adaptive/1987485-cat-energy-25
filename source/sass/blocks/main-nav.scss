@@ -21,6 +21,14 @@
   }
 }
 
+.main-nav__list-link:hover {
+  opacity: 0.6;
+}
+
+.main-nav__list-link:active {
+  opacity: 0.3;
+}
+
 @media (max-width: 767px) {
   .main-nav--closed .main-nav__list-item {
     display: none;

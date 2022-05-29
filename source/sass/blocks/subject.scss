@@ -39,6 +39,15 @@
   cursor: pointer;
 }
 
+.subject__button:hover {
+  background: #5eaa2f;
+}
+
+.subject__button:active {
+  background: #5eaa2f;
+  color: #ffffff2d;
+}
+
 @media (min-width: 180px) {
   .subject {
     display: flex;

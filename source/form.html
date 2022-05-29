@@ -87,7 +87,7 @@
           <ul class="filter__list">
             <li class="filter__item">
               <label class="filter__radio control">
-                <input class="visually-hidden control__field" type="radio" name="weight-loss" value="похудение" checked>
+                <input class="visually-hidden control__input" type="radio" name="weight-loss" value="похудение" checked>
                 <span class="control__mark control__mark-radio"></span>
                 <span class="control__text">похудение</span>
               </label>
@@ -95,7 +95,7 @@
 
             <li class="filter__item">
               <label class="filter__radio control">
-                <input class="visually-hidden control__field" type="radio" name="weight-gain" value="Набор массы">
+                <input class="visually-hidden control__input" type="radio" name="weight-gain" value="Набор массы">
                 <span class="control__mark"></span>
                 <span class="control__text">Набор массы</span>
               </label>
@@ -103,7 +103,7 @@
 
             <li class="filter__item">
               <label class="filter__radio control">
-                <input class="visually-hidden control__field" type="radio" name="advice"
+                <input class="visually-hidden control__input" type="radio" name="advice"
                   value="Не знаю (Нужен ваш совет)">
                 <span class="control__mark"></span>
                 <span class="control__text">Не знаю (Нужен ваш совет)</span>
@@ -151,29 +151,37 @@
           </div>
         </section>
         <ul class="recommendation__list">
-          <li class="recommendation__item customization">
-            <input class="customization__field visually-hidden customization__control" type="checkbox" name="sweetener" id="sweetener-field"
-              checked>
-            <span class="customization__mark customization__mark-radio"></span>
-            <label class="customization__label" for="sweetener-field">сахарозаменитель</label>
+          <li class="recommendation__item">
+            <label class="customization">
+              <input class="customization__input visually-hidden" type="checkbox" name="sweetener" id="sweetener-field"
+                checked>
+              <span class="customization__mark"></span>
+              <span class="customization__label">сахарозаменитель</span>
+            </label>
           </li>
 
           <li class="recommendation__item">
-            <input class="customization__field visually-hidden" type="checkbox" name="water" id="water-field">
-            <span class="customization__mark"></span>
-            <label class="customization__label" for="water-field">питьевая вода</label>
+            <label class="customization">
+              <input class="customization__input visually-hidden" type="checkbox" name="water" id="water-field">
+              <span class="customization__mark"></span>
+              <span class="customization__label">питьевая вода</span>
+            </label>
           </li>
 
           <li class="recommendation__item">
-            <input class="customization__field visually-hidden" type="checkbox" name="milk" id="milk-field">
-            <span class="customization__mark"></span>
-            <label class="customization__label" for="milk-field">молоко</label>
+            <label class="customization">
+              <input class="customization__input visually-hidden" type="checkbox" name="milk" id="milk-field">
+              <span class="customization__mark"></span>
+              <span class="customization__label">молоко</span>
+            </label>
           </li>
 
           <li class="recommendation__item">
-            <input class="customization__field visually-hidden" type="checkbox" name="vitamins" id="vitamins-field">
-            <span class="customization__mark"></span>
-            <label class="customization__label" for="vitamins-field">витамины</label>
+            <label class="customization">
+              <input class="customization__input visually-hidden" type="checkbox" name="vitamins" id="vitamins-field">
+              <span class="customization__mark"></span>
+              <span class="customization__label">витамины</span>
+            </label>
           </li>
         </ul>
       </div>

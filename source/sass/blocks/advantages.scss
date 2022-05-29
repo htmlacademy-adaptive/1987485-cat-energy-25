@@ -1,5 +1,4 @@
 .advantages {
-  width: 1440px;
   margin: 0 auto;
 }
 
@@ -49,20 +48,20 @@
 }
 
 .advantages__item--petal::before {
-  background-image: url("./source/img/petal.svg");
+  background-image: url("/img/petal.svg");
 }
 
 .advantages__item--powder::before {
-  background-image: url("./source/img/powder.svg");
+  background-image: url("/img/powder.svg");
   z-index: 3;
 }
 
 .advantages__item--dining::before {
-  background-image: url("./source/img/dining.svg");
+  background-image: url("/img/dining.svg");
 }
 
 .advantages__item--scales::before {
-  background-image: url("./source/img/scales.svg");
+  background-image: url("/img/scales.svg");
 }
 
 @media (max-width: 767px) {
