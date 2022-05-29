@@ -17,11 +17,11 @@
   font-size: 14px;
   line-height: 18px;
   color: #444444;
-  margin: 0 20px 40px 20px;
+  margin: 0 20px 20px 20px;
 }
 
 .description__list {
-  margin: 0 20px 36px 20px;
+  margin: 0 20px 32px 20px;
   padding: 0;
   display: flex;
   justify-content: space-between;
@@ -68,6 +68,7 @@
   background: #eaeaea;
   margin: 0;
   padding: 0;
+  padding-bottom: 46px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -79,16 +80,44 @@
 }
 
 .description__result-text {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
   margin: 0;
   padding: 0;
+  border: none;
+  cursor: pointer;
 }
+
 
 @media (max-width: 767px) {
   .description__expenses br {
     display: none;
+  }
+
+  .description__result-range {
+    position: relative;
+    height: 14px;
+    width: 86px;
+    background-color: #ffffff;
+    border: 1px solid #cdcdcd;
+    border-radius: 6px;
+    margin: 2px 13px 0 13px;
+  }
+
+  .description__result-range-toggle {
+    position: absolute;
+    background-color: #68b738;
+    height: 6px;
+    width: 35px;
+    border-radius: 6px;
+    cursor: pointer;
+    top: 30%;
+    left: 10%;
+    border-color: #68b738;
   }
 }
 
@@ -174,6 +203,43 @@
     margin: 0;
     margin-top: 5px;
   }
+
+  .description__result-range {
+    position: relative;
+    height: 6px;
+    width: 426px;
+    background-color: #cdcdcd;
+    border-radius: 6px;
+    margin: 8px 13px 0 13px;
+  }
+
+  .description__result-range-toggle {
+    position: absolute;
+    background: #ffffff;
+    border: 1px solid #cdcdcd;
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+    cursor: pointer;
+    bottom: -14px;
+    left: 46%;
+  }
+
+  .description__result-range-toggle::before {
+    content: "";
+    position: absolute;
+    background: #68b738;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    bottom: 12px;
+    left: 38%;
+  }
+
+  .description__result-range-toggle:active,
+  .description__result-range-toggle:focus {
+    outline: 1px solid #68b738;
+  }
 }
 
 @media (min-width: 1440px) {
@@ -203,6 +269,7 @@
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 69px;
+    overflow: scroll;
   }
 
   .description__container {

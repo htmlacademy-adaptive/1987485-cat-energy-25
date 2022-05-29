@@ -34,12 +34,21 @@
 }
 
 .main-footer__main-link {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
   text-decoration: none;
   display: flex;
   justify-content: space-between;
   max-width: 767px;
-  padding: 22px 0;
+  padding: 30px 0;
   color: #000000;
+}
+
+.main-footer__main-link-image {
+  margin-top: -6px;
 }
 
 .main-footer__link {
@@ -75,7 +84,7 @@
 
   .main-footer__title-link {
     margin: 0;
-    padding: 20px 0;
+    padding: 31px 0;
   }
 }
 

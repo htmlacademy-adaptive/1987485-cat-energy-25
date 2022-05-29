@@ -109,10 +109,9 @@ ul .filter__item:not(:last-child) {
   z-index: -1;
 }
 
-.cantact__container-line-title,
+.contact__container-line-title,
 .comment__container-line-title,
 .recommendation__container-line-title {
-  max-width: 1440px;
   margin: 0 auto;
 }
 
@@ -184,7 +183,7 @@ ul .filter__item:not(:last-child) {
 
 .contact__email-input,
 .contact__tel-input {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   border: #dcdcdc solid 1px;
   border-radius: 0;
   height: 45px;
@@ -202,7 +201,7 @@ ul .filter__item:not(:last-child) {
 }
 
 .comment__area {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   line-height: 18px;
   text-transform: uppercase;
   color: #444444;
@@ -236,11 +235,6 @@ ul .recommendation__item:not(:last-child) {
   position: relative;
 }
 
-/*.customization__control {
-  display: flex;
-  align-items: center;
-}*/
-
 .customization__mark {
   border: #cdcdcd 1px solid;
   width: 30px;
@@ -259,8 +253,8 @@ ul .recommendation__item:not(:last-child) {
   margin-left: 18px;
 }
 
-.questionnaire__button {
-  font-family: "Oswald", sans-serif;
+.survey__button {
+  font-family: "Oswald", "Arial", sans-serif;
   text-transform: uppercase;
   width: 280px;
   border: none;
@@ -395,7 +389,7 @@ ul .recommendation__item:not(:last-child) {
   .comment__area {
     font-size: 20px;
     line-height: 30px;
-    width: 100%;
+    width: 82%;
     margin: 0 70px;
     text-align: left;
     padding: 10px 0 0 20px;
@@ -423,13 +417,13 @@ ul .recommendation__item:not(:last-child) {
     height: 40px;
   }
 
-  .questionnaire-container__button-hint {
+  .survey {
     display: flex;
     align-items: center;
     margin: 50px 0 72px 70px;
   }
 
-  .questionnaire__button {
+  .survey__button {
     width: 282px;
     padding: 13px 0;
     font-size: 20px;
@@ -480,6 +474,7 @@ ul .recommendation__item:not(:last-child) {
     justify-content: space-between;
     margin: 0 110px;
     align-items: center;
+    width: 1240px;
   }
 
   .comment__area {
@@ -489,10 +484,15 @@ ul .recommendation__item:not(:last-child) {
 
   .recommendation__list {
     display: flex;
-    width: 1196px;
+    width: 1130px;
+    margin-left: 110px;
   }
 
-  .questionnaire__button {
+  .survey {
+    margin-left: 110px;
+  }
+
+  .survey__button {
     width: 568px;
     padding: 13px 188px;
   }

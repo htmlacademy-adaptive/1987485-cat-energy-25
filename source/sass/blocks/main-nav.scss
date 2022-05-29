@@ -65,7 +65,7 @@
 }
 
 .main-nav__wrapper {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 500;
   font-size: 20px;
   line-height: 20px;
@@ -198,11 +198,11 @@
     color: #ffffff;
   }
 
-  .catalog-nav__list-link {
+  .main-catalog-nav__list-link {
     color: #000000;
   }
 
-  .catalog-nav__list-item {
+  .main-catalog-nav__list-item {
     &::after {
       background: #68b738;
     }
